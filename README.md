@@ -17,6 +17,7 @@ Interactive contact button for mobile users.
 ## Cart Page
 Dynamic cart functionality with:
 Add or remove items.
+- **Responsive Web Design**
 Cart icon displaying the number of items added.
 Price totals in Ugandan Shillings (UGX).
 Checkout button linked back to the homepage.
