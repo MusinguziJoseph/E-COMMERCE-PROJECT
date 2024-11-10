@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <script defer src="JS/product.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Internal CSS styling */
+        
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #ff6f00;
+            color: white;
+        }
+        
+        .logo h1 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        nav a {
+            margin-right: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        
+        #cart-count {
+            background-color: white;
+            color: #ff6f00;
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+        
+        /* Product Details Section */
+        #product-details {
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        #product-name {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        #product-image {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        
+        #product-price {
+            font-size: 1.5em;
+            color: #ff6f00;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        #product-description {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        #product-features {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            margin: 0 auto 20px;
+            max-width: 400px;
+        }
+        
+        /* Button Styling */
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #e55c00;
+        }
+        
+        .delivery-details {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        
+        /* Contact Dialog Styling */
+        #contact-dialog {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1000;
+            border-radius: 8px;
+        }
+        
+        #contact-dialog button {
+            padding: 8px 16px;
+            font-size: 0.9em;
+            color: #333;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        /* Related Products Section */
+        #related-products-section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            
+        }
+        
+        #related-products-section h3 {
+            font-size: 1.5em;
+            color: #333;
+            text-align: center;
+            margin-bottom: 15px;
+            
+        }
+        
+        #related-products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            text-decoration: none;
+            
+        }
+        
+        .related-item {
+            text-align: center;
+            max-width: 120px;
+            
+        }
+        
+        .related-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+  
+  #related-products .related-item a {
+    text-decoration: none;
+    color: inherit; /* Keeps the color consistent */
+}
+
+.footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    width: 200px;
+}
+
+.footer-section h4 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.payment-icons img {
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #444;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>YoShop</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <!-- Product Details Section -->
+    <section id="product-details">
+        <h2 id="product-name">Product Name</h2>
+        <img id="product-image" src="" alt="Product Image">
+        <p id="product-price">UGX0</p>
+        <p id="product-description">Product description goes here...</p>
+        
+        <h3>Features:</h3>
+        <ul id="product-features">
+            <!-- Features will be added dynamically -->
+        </ul>
+
+        <button onclick="addToCart()" style="background-color: #ff6f00;">Add to Cart</button>
+
+        <div class="delivery-details">
+            <h3>Delivery Details</h3>
+            <p>Delivery within 3-5 business days. Free shipping Within Kampala on orders over UGX 400000.</p>
+        </div>
+
+        <button onclick="showContactDialog()" style="background-color: #007bff; margin-top: 10px;">Contact Us</button>
+
+        <!-- Contact Dialog -->
+        <div id="contact-dialog">
+            <p>Call us at <a href="tel:+1234567890" style="color: #ff6f00; text-decoration: none;">0772974006</a> or email us at <a href="musinguzijoseph37@gmail.com" style="color: #ff6f00; text-decoration: none;">musinguzijoseph37@gmail.com</a></p>
+            <button onclick="closeContactDialog()">Close</button>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section id="related-products-section">
+        <h3>You May Also Like</h3>
+        <div id="related-products">
+            <!-- Related products will be loaded here dynamically -->
+        </div>
+    </section>
+
+    <!-- JavaScript for Dialog Control -->
+    <script>
+        // Function to show the contact dialog
+        function showContactDialog() {
+            document.getElementById("contact-dialog").style.display = "block";
+        }
+
+        // Function to hide the contact dialog
+        function closeContactDialog() {
+            document.getElementById("contact-dialog").style.display = "none";
+        }
+    </script>
+     <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Need Help?</h4>
+            <ul>
+                <li><a href="#">Chat with us</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>About YoShop</h4>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Black Friday</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Make Money With Us</h4>
+            <ul>
+                <li><a href="#">Sell on YoShop</a></li>
+                <li><a href="#">Become a Sales Consultant</a></li>
+                <li><a href="#">Become a Logistics Partner</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Payment Methods</h4>
+            <div class="payment-icons">
+                <img src="images/visa.png" alt="Visa">
+                <img src="images/card.png" alt="MasterCard">
+                <img src="images/paypal.png" alt="PayPal">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 YoShop. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

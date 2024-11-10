@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/laptops.css">
+    <title>YoShop - Laptops</title>
+    <script defer src="JS/cart.js"></script>
+    <script defer src="JS/product.js"></script>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown-menu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+    <style>
+         
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+         <nav>
+            <span class="menu-icon" onclick="toggleDropdown()">&#9776;</span>
+            <div id="dropdown-menu" class="dropdown">
+                <a href="cameras.html">Cameras</a>
+                <a href="phones.html">Phones</a>
+                <a href="laptops.html">Laptops</a>
+                <a href="lights.html">Lights</a>
+            </div>
+        </nav>
+        <div class="logo">
+            <h1>YoShop</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products">
+            <button>Search</button>
+        </div>
+        <div class="account-cart-links">
+            <a href="account.html"><i class="fas fa-user"></i> Account</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <!-- Laptops Section -->
+    <section>
+        <h2></h2>
+        <div class="product-list">
+            <div class="product-card">
+                <a href="product.html?id=20">
+                    <img src="images/laptops/Laptop1.jfif" alt="Laptop" style="width:100%;">
+                    <p class="product-description">Experience the pinnacle of portable computing with the Ultrabook Elite..</p>
+                    <p class="original-price">UGX 2,000,000</p>
+                    <p class="discounted-price">UGX 1,500,000</p>
+                    <p class="discount-percentage">-25%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=21">
+                    <img src="images/laptops/dell 365.jfif" alt="Laptop" style="width:100%;">
+                    <p class="product-description">The Business Powerhouse.designed to meet the demanding needs of today's business professionals.</p>
+                    <p class="original-price">UGX 1,800,000</p>
+                    <p class="discounted-price">UGX 1,400,000</p>
+                    <p class="discount-percentage">-40%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=22">
+                    <img src="images/laptops/dell gaming.jfif" alt="Laptop" style="width:100%;">
+                    <p class="product-description">The All-in-One Wonder is a versatile laptop that can handle a wide range of tasks.</p>
+                    <p class="original-price">UGX 1600,000</p>
+                    <p class="discounted-price">UGX 1,000,000</p>
+                    <p class="discount-percentage">-30%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=23">
+                    <img src="images/laptops/hp.jfif" alt="Laptop" style="width:100%;">
+                    <p class="product-description">The Dell XPS 13 (2023) is a premium ultrabook designed for professionals and students alike.</p>
+                    <p class="original-price">UGX 1,000,000</p>
+                    <p class="discounted-price">UGX 800,000</p>
+                    <p class="discount-percentage">-20%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=24">
+                    <img src="images/laptops/LAPTOP.jpg" alt="Laptop" style="width:100%;">
+                    <p class="product-description">The HP Spectre x360 (2023) is a versatile convertible laptop that combines elegance with functionality.</p>
+                    <p class="original-price">UGX 1,400,000</p>
+                    <p class="discounted-price">UGX 1,200,000</p>
+                    <p class="discount-percentage">-20%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=25">
+                    <img src="images/laptops/galaxy book.jfif" alt="Laptop" style="width:100%;">
+                    <p class="product-description">The Lenovo ThinkPad X1 Carbon Gen10 is engineered for business professionals who demand reliability and performance in their daily tasks.</p>
+                    <p class="original-price">UGX 2,000,000</p>
+                    <p class="discounted-price">UGX 1,200,000</p>
+                    <p class="discount-percentage">-40%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=26">
+                    <img src="images/laptops/galaxy book series.jfif" alt="Laptop" style="width:100%;">
+                    <p class="product-description">The Student Laptop Lite is perfect for students seeking a budget-friendly option .</p>
+                    <p class="original-price">UGX 1,500,000</p>
+                    <p class="discounted-price">UGX 1,300,000</p>
+                    <p class="discount-percentage">-20%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=27">
+                    <img src="images/laptops/galaxy book1.jfif" alt="Laptop" style="width:100%;">
+                    <p class="product-description">The Gaming Titan: Dominate the gaming world with the Gaming Titan.</p>
+                    <p class="original-price">UGX 2,500,000</p>
+                    <p class="discounted-price">UGX 2,000,000</p>
+                    <p class="discount-percentage">-25%</p>
+                    <p class="category-label"></p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=28">
+                    <img src="images/laptops/962 accer.jfif" alt="Laptop" style="width:100%;">
+                    <p class="product-description"> Dive into the world of high-performance gaming with the Gaming Beast X17. .</p>
+                    <p class="original-price">UGX 1,800,000</p>
+                    <p class="discounted-price">UGX 1,400,000</p>
+                    <p class="discount-percentage">-20%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=29">
+                    <img src="images/laptops/accer aspire 3.jfif" alt="Laptop" style="width:100%;">
+                    <p class="product-description">, the BusinessMate X1 combines performance and security in a lightweight package</p>
+                    <p class="original-price">UGX 2,400,000</p>
+                    <p class="discounted-price">UGX 2,100,000</p>
+                    <p class="discount-percentage">-20%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            
+
+        </div>
+    </section>
+     <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Need Help?</h4>
+            <ul>
+                <li><a href="#">Chat with us</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>About YoShop</h4>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Black Friday</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Make Money With Us</h4>
+            <ul>
+                <li><a href="#">Sell on YoShop</a></li>
+                <li><a href="#">Become a Sales Consultant</a></li>
+                <li><a href="#">Become a Logistics Partner</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Payment Methods</h4>
+            <div class="payment-icons">
+                <img src="images/visa.png" alt="Visa">
+                <img src="images/card.png" alt="MasterCard">
+                <img src="images/paypal.png" alt="PayPal">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 YoShop. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

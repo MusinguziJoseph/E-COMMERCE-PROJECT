@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoShop - Cart</title>
+    <script defer src="JS/cart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Internal CSS Styling */
+
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #ff6f00;
+            color: white;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-right: 15px;
+        }
+
+        #cart-count {
+            background-color: white;
+            color: #ff6f00;
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+
+        /* Cart Section Styling */
+        #cart-section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #cart-section h2 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Cart Item Styling */
+        .cart-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-item img {
+            width: 60px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .cart-item-details {
+            flex: 1;
+        }
+
+        .cart-item p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .cart-item .remove-btn {
+            background-color: #ff6f00;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cart-item .remove-btn:hover {
+            background-color: #e65a00;
+        }
+
+        /* Total Price Styling */
+        .cart-total {
+            text-align: right;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Empty Cart Message */
+        .empty-cart-message {
+            text-align: center;
+            color: #777;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+
+        /* Checkout Button */
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 1em;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-btn:hover {
+            background-color: #218838;
+        }
+        .footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    width: 200px;
+}
+
+.footer-section h4 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.payment-icons img {
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #444;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section (Consistent with Home Page) -->
+    <header>
+        <div class="logo">
+            <h1>YoShop</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="account.html">Account</a>
+            <a href="cart.html">Cart <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section id="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+        <p class="cart-total" id="cart-total">Total: UGX0</p>
+        <!-- "Proceed to Checkout" button now links to the home page -->
+        <a href="index.html" class="checkout-btn">Proceed to Checkout</a>
+    </section>
+
+    <!-- JavaScript to Display Cart Items -->
+    <script>
+        function displayCart() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const cartContainer = document.getElementById("cart-items");
+            const cartTotal = document.getElementById("cart-total");
+
+            cartContainer.innerHTML = '';
+
+            if (cart.length === 0) {
+                cartContainer.innerHTML = '<p class="empty-cart-message">Your cart is empty.</p>';
+                cartTotal.textContent = "Total: UGX0";
+            } else {
+                let total = 0;
+                cart.forEach(item => {
+                    const cartItem = document.createElement("div");
+                    cartItem.className = "cart-item";
+
+                    cartItem.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}">
+                        <div class="cart-item-details">
+                            <p><strong>${item.name}</strong></p>
+                            <p>UGX${item.price.toFixed(0)} x ${item.quantity}</p>
+                            <p>Total: UGX${(item.price * item.quantity).toFixed(0)}</p>
+                        </div>
+                        <button class="remove-btn" onclick="removeFromCart(${item.id})">Remove</button>
+                    `;
+
+                    cartContainer.appendChild(cartItem);
+                    total += item.price * item.quantity;
+                });
+
+                cartTotal.textContent = `Total: UGX${total.toFixed(2)}`;
+            }
+        }
+
+        function removeFromCart(id) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart = cart.filter(item => item.id !== id);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            displayCart();
+        }
+
+        window.onload = displayCart;
+    </script>
+     <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Need Help?</h4>
+            <ul>
+                <li><a href="#">Chat with us</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>About YoShop</h4>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Black Friday</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Make Money With Us</h4>
+            <ul>
+                <li><a href="#">Sell on YoShop</a></li>
+                <li><a href="#">Become a Sales Consultant</a></li>
+                <li><a href="#">Become a Logistics Partner</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Payment Methods</h4>
+            <div class="payment-icons">
+                <img src="images/visa.png" alt="Visa">
+                <img src="images/card.png" alt="MasterCard">
+                <img src="images/paypal.png" alt="PayPal">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 YoShop. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

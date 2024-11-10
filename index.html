@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoShop Online - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <script defer src="JS/cart.js"></script>
+    <script defer src="JS/product.js"></script>
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown-menu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+   
+    <header>
+        <nav>
+            <span class="menu-icon" onclick="toggleDropdown()">&#9776;</span>
+            <div id="dropdown-menu" class="dropdown">
+                <a href="cameras.html">Cameras</a>
+                <a href="phones.html">Phones</a>
+                <a href="laptops.html">Laptops</a>
+                <a href="lights.html">Lights</a>
+            </div>
+        </nav>
+        <div class="logo">
+            <h1>YoShop</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <div class="account-cart-links">
+            <a href="account.html"><i class="fas fa-user"></i> Account</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a>
+        </div>
+    </header>
+    
+     
+<section class="hero-banner">
+    <div class="hero-text">
+        <div class="sliding-text">
+            <span>Big Discounts on Electronics!</span>
+            <span>Free Shipping Over ugx 400000!</span>
+            <span>Shop Latest Gadgets!</span>
+            <span>Exclusive Deals Weekly!</span>
+            <span>24/7 Customer Support!</span>
+            <span>Best Quality Assured!</span>
+        </div>
+    </div>
+</section>
+
+     <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <a href="product.html?id=1">
+                    <img src="images/cameras/pexels-asphotograpy-96612.jpg" alt="Camera" style="width:100%;">
+                    
+                    <p class="product-description">High quality camera Capture stunning images with this high-resolution camera.</p>
+                    <p class="original-price">UGX 600,000</p>
+                    <p class="discounted-price">UGX 399,000</p>
+                    <p class="discount-percentage"></p>
+                    <p class="category-label">Official Store</p>
+                    
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=2">
+                    <img src="images/laptops/LAPTOP.jpg" alt="Camera " style="width:100%;">
+                    <p class="product-description">Gaming Beast X17:Dive into the world of high-performance gaming with the Gaming Beast X17.</p>
+                    <p class="original-price">UGX 1200,000</p>
+                    <p class="discounted-price">UGX 900,000</p>
+                    <p class="discount-percentage"></p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=3">
+                    <img src="images/lights/pexels-jayoke-1146562.jpg" alt="light2" style="width:100%;">
+                    <p class="product-description">The Modern Marvel: The Modern Marvel is a sleek and stylish light fixture that blends seamlessly with contemporary interiors.</p>
+                    <p class="original-price">UGX 120,000</p>
+                    <p class="discounted-price">UGX 90000</p>
+                    <p class="discount-percentage">-34%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=4">
+                    <img src="images/laptops/dell 365.jfif" alt="laptop" style="width:100%;">
+                    <p class="product-description">UltraBook Pro 15: The UltraBook Pro 15 is the epitome of elegance and efficiency.</p>
+                    <p class="original-price">UGX 2,000,000</p>
+                    <p class="discounted-price">UGX 1,200,000</p>
+                    <p class="discount-percentage"></p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=5">
+                    <img src="images/laptops/dell gaming.jfif" alt="laptop" style="width:100%;">
+                    <p class="product-description">The Ultrabook Elite: Experience the pinnacle of portable computing with the Ultrabook Elite.</p>
+                    <p class="original-price">UGX 1,500,000</p>
+                    <p class="discounted-price">UGX 1,000,000</p>
+                    <p class="discount-percentage">-34%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=6">
+                    <img src="images/phones/itel a60.jfif" alt="laptop" style="width:100%;">
+                    <p class="product-description">The Business Beast: The Business Beast is the ultimate productivity tool. Its long-lasting battery, fast charging, and advanced security features .</p>
+                    <p class="original-price">UGX 600,000</p>
+                    <p class="discounted-price">UGX 399,000</p>
+                    <p class="discount-percentage">-34%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=7">
+                    <img src="images/phones/itel a05.jfif" alt="laptop" style="width:100%;">
+                    <p class="product-description">The Fashion Forward: The Fashion Forward is a stylish and sophisticated smartphone</p>
+                    <p class="original-price">UGX 900,000</p>
+                    <p class="discounted-price">UGX 650,000</p>
+                    <p class="discount-percentage">-34%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=8">
+                    <img src="images/phones/itel based1.jfif" alt="laptop" style="width:100%;">
+                    <p class="product-description">10.	The All-Rounder Ace: The All-Rounder Ace is a versatile smartphone that excels in every category.</p>
+                    <p class="original-price">UGX 1,300,000</p>
+                    <p class="discounted-price">UGX 1,100,000</p>
+                    <p class="discount-percentage">-34%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=9">
+                    <img src="images/cameras/pexels-pixabay-51383.jpg" alt="laptop" style="width:100%;">
+                    <p class="product-description">The Lumix S5 II is a full-frame mirrorless camera designed for both photographers and videographers.</p>
+                    <p class="original-price">UGX 250,000</p>
+                    <p class="discounted-price">UGX 170,000</p>
+                    <p class="discount-percentage">-34%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=10">
+                    <img src="images/smart watches/pexels-alexandr-borecky-128389-393047.jpg" alt="laptop" style="width:100%;">
+                    <p class="product-description">The Fitness Fanatic: Designed for the active lifestyle, this smartwatch tracks your heart rate, steps, and calories burned.</p>
+                    <p class="original-price">UGX 200,000</p>
+                    <p class="discounted-price">UGX 150,000</p>
+                    <p class="discount-percentage">-34%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=11">
+                    <img src="images/smart watches/pexels-tdcat-437037.jpg" alt="laptop" style="width:100%;">
+                    <p class="product-description">	The Tech Titan: This smartwatch is packed with the latest technology, including a fast processor, large storage, and a stunning display.</p>
+                    <p class="original-price">UGX 220,000</p>
+                    <p class="discounted-price">UGX 120000</p>
+                    <p class="discount-percentage">-48%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=12">
+                    <img src="images/smart watches/smart watch.jfif" alt="laptop" style="width:100%;">
+                    <p class="product-description">The Health Haven: Prioritize your well-being with this smartwatch. It monitors your stress levels, blood oxygen levels, and more.</p>
+                    <p class="original-price">UGX 300,000</p>
+                    <p class="discounted-price">UGX 250,000</p>
+                    <p class="discount-percentage">-34%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=13">
+                    <div class="discount-label">Black Friday deal</div>
+                    <img src="images/laptops/mackboo.jfif" alt="Camera" style="width:100%;">
+                    <p class="product-description">The Apple MacBook Air M2 (2023) redefines the ultraportable laptop experience with its new M2 chip.</p>
+                    <p class="original-price">UGX 4,000,000</p>
+                    <p class="discounted-price">UGX 3,000,000</p>
+                    <p class="discount-percentage">-25%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=14">
+                    <div class="discount-label">Black Friday deal</div>
+                    <img src="images/smart watches/smartwt.jfif" alt="Camera" style="width:100%;">
+                    
+                    <p class="product-description">The Gamer's Gadget: This smartwatch is for gamers who want to stay connected and competitive.</p>
+                    <p class="original-price">UGX 600,000</p>
+                    <p class="discounted-price">UGX 399,000</p>
+                    <p class="discount-percentage">-34%</p>
+                    <p class="category-label">Official Store</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product.html?id=15">
+                    <div class="discount-label">Black Friday deal</div>
+                    <img src="images/cameras/cct6.jfif" alt="Camera" style="width:100%;">
+                    <p class="category-label">Official Store</p>
+                    
+                    <p class="product-description">High quality camera Capture stunning images with this high-resolution camera.</p>
+                    <p class="original-price">UGX 600,000</p>
+                    <p class="discounted-price">UGX 399,000</p>
+                    <p class="discount-percentage">-34%</p>
+                </a>
+            </div>
+            
+       
+            
+            
+        
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Need Help?</h4>
+            <ul>
+                <li><a href="#">Chat with us</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>About YoShop</h4>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Black Friday</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Make Money With Us</h4>
+            <ul>
+                <li><a href="#">Sell on YoShop</a></li>
+                <li><a href="#">Become a Sales Consultant</a></li>
+                <li><a href="#">Become a Logistics Partner</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Payment Methods</h4>
+            <div class="payment-icons">
+                <img src="images/visa.png" alt="Visa">
+                <img src="images/card.png" alt="MasterCard">
+                <img src="images/paypal.png" alt="PayPal">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 YoShop. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
