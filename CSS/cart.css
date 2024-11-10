@@ -1,0 +1,98 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header .logo h1 {
+    color: #ff6f00;
+    margin: 0;
+}
+
+header .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+}
+
+header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+header .search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6f00;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+header .account-links a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+header .account-links a:hover {
+    color: #ff6f00;
+}
+
+/* Cart Section Styling */
+.cart-container {
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.cart-container .cart-icon img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.cart-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cart-container p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.btn-start-shopping {
+    background-color: #ff6f00;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-start-shopping:hover {
+    background-color: #e65a00;
+}
