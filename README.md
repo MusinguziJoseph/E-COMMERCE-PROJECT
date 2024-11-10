@@ -47,7 +47,7 @@ To view and test this project on your local machine:
 ## Clone the repository:
 bash
 
-git clone https://github.com/yourusername/ecommerce-website.git
+git clone https://MusinguziJoseph/ecommerce-website.git
 Navigate to the project folder:
 
 cd ecommerce-website
