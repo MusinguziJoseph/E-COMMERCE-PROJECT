@@ -23,7 +23,7 @@ Add or remove items.
  * Cart icon displaying the number of items added.
  * Price totals in Ugandan Shillings (UGX).
  * Checkout button linked back to the homepage.
-   ![image alt]()
+   ![image alt](https://github.com/MusinguziJoseph/E-COMMERCE-PROJECT/blob/c11d5937d98e7a8515a1ddb8c291e228ded76259/cart%20page.jpg)
 # Navigation Menu
  * A responsive hamburger menu for product categories (Cameras, TVs, Laptops, Lights).
  * Quick navigation links to different sections and pages.
