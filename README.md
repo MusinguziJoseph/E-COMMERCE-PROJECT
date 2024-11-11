@@ -86,3 +86,4 @@ Looking for a passionate web developer? Feel free to reach out!
  * 📧 Email:musinguzijoseph37@gmail.com 
  * 💼 LinkedIn: https://linkedin.com/in/JOSEPHMUSINGUZI
  * 🌐 Portfolio: https://musinguzijoseph.github.io/Portfolio/
+ * Twitter: https://twitter.com/@JOSEPHMUSI23345
