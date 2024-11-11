@@ -15,7 +15,7 @@ Welcome to my fully functional E-Commerce Website! This project showcases my ski
 * "Add to Cart" button, with a success notification on click.
 * "Related Products" section to suggest other items users may like.
 * Interactive contact button for mobile users.
-  ![image alt]()
+  ![image alt](https://github.com/MusinguziJoseph/E-COMMERCE-PROJECT/blob/6c2e3044e30246168ae947aee7503eb6d6cff315/product%20details.jpg)
 ## Cart Page
 * Dynamic cart functionality with:
 Add or remove items.
