@@ -21,7 +21,7 @@ Add or remove items.
  * Cart icon displaying the number of items added.
  * Price totals in Ugandan Shillings (UGX).
  * Checkout button linked back to the homepage.
-#Navigation Menu
+# Navigation Menu
  * A responsive hamburger menu for product categories (Cameras, TVs, Laptops, Lights).
  * Quick navigation links to different sections and pages.
 ## Footer
@@ -30,7 +30,7 @@ Add or remove items.
  * Social media icons and payment methods.
  * Section for popular brands.
 ## Technologies Used
- *HTML5: For creating a semantic and accessible structure.
+ * HTML5: For creating a semantic and accessible structure.
  * CSS3 (Internal Styling): For visually appealing design and layout.
  * JavaScript (ES6): For dynamic content, interactivity, and functionality.
  * Local Storage: To save cart data persistently across sessions.
@@ -42,18 +42,17 @@ Add or remove items.
  * Cart Page: Review selected items, update quantities, or remove items. The total price dynamically updates.
  * Search Bar: Enter product names to find specific items instantly.
  * Navigation: Use the hamburger menu to navigate between categories like Cameras, TVs, Laptops, and Lights.
-##Project Setup
+## Project Setup
 To view and test this project on your local machine:
 
 ## Clone the repository:
-bash
 
-git clone https://MusinguziJoseph/ecommerce-website.git
-Navigate to the project folder:
+* git clone https://MusinguziJoseph/ecommerce-website.git
+* Navigate to the project folder:
 
-cd ecommerce-website
-Open the project in your preferred browser by opening index.html.
-##Live Demo
+* cd ecommerce-website
+* Open the project in your preferred browser by opening index.html.
+## Live Demo
 *Check out the live version of this project here: Live Demo
 
 
@@ -70,8 +69,8 @@ This project will be further enhanced with:
 * Payment Gateway: Integration with a payment provider for checkout.
 * Wishlist Feature: Adding the ability to save favorite products for later.
 * Admin Panel: To manage products, categories, and orders.
-Skills Demonstrated
-This project demonstrates my expertise in:
+* Skills Demonstrated
+* This project demonstrates my expertise in:
 
 ## Building responsive and user-friendly web interfaces.
  * Developing JavaScript-based functionalities for dynamic web applications.
@@ -79,6 +78,6 @@ This project demonstrates my expertise in:
  * Organizing and writing readable and maintainable code.
 ## Contact Me
 Looking for a passionate web developer? Feel free to reach out!
- *📧 Email:musinguzijoseph37@gmail.com 
- *💼 LinkedIn: linkedin.com/JOSEPHMUSINGUZI
- *🌐 Portfolio: https://musinguzijoseph.github.io/Portfolio/
+ * 📧 Email:musinguzijoseph37@gmail.com 
+ * 💼 LinkedIn: linkedin.com/JOSEPHMUSINGUZI
+ * 🌐 Portfolio: https://musinguzijoseph.github.io/Portfolio/
