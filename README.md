@@ -72,15 +72,17 @@ This project will be further enhanced with:
 * Payment Gateway: Integration with a payment provider for checkout.
 * Wishlist Feature: Adding the ability to save favorite products for later.
 * Admin Panel: To manage products, categories, and orders.
-* Skills Demonstrated
-* This project demonstrates my expertise in:
+## Contributing
+- Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+  * Fork the repository.
+  * Create a new branch (git checkout -b feature/YourFeature).
+  * Make your changes and commit them (git commit -m 'Add some feature').
+  * Push to the branch (git push origin feature/YourFeature).
+  * Open a pull request.
 
-## Building responsive and user-friendly web interfaces.
- * Developing JavaScript-based functionalities for dynamic web applications.
- * Using local storage to manage cart functionality and maintain state.
- * Organizing and writing readable and maintainable code.
 ## Contact Me
 Looking for a passionate web developer? Feel free to reach out!
+* Phone/Whatsaap:+256 772974006
  * 📧 Email:musinguzijoseph37@gmail.com 
  * 💼 LinkedIn: linkedin.com/JOSEPHMUSINGUZI
  * 🌐 Portfolio: https://musinguzijoseph.github.io/Portfolio/
