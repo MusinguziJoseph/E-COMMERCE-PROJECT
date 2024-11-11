@@ -9,7 +9,7 @@ Welcome to my fully functional E-Commerce Website! This project showcases my ski
 * Display of featured products with dynamically loaded product details.
 * Responsive design that adapts to any screen size (desktop, tablet, or mobile).
 * Fully functional search bar to quickly find products.
-  ![image alt]()
+  ![image alt](https://github.com/MusinguziJoseph/E-COMMERCE-PROJECT/blob/4a570e7069ed68be1dcb78292d4343ec25f2868c/Homepage.jpg)
 ## Product Details Page
 * Detailed product descriptions, features, and pricing.
 * "Add to Cart" button, with a success notification on click.
