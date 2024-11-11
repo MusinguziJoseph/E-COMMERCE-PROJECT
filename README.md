@@ -84,5 +84,5 @@ This project will be further enhanced with:
 Looking for a passionate web developer? Feel free to reach out!
 * Phone/Whatsaap:+256 772974006
  * 📧 Email:musinguzijoseph37@gmail.com 
- * 💼 LinkedIn: linkedin.com/JOSEPHMUSINGUZI
+ * 💼 LinkedIn: https://linkedin.com/in/JOSEPHMUSINGUZI
  * 🌐 Portfolio: https://musinguzijoseph.github.io/Portfolio/
