@@ -9,11 +9,13 @@ Welcome to my fully functional E-Commerce Website! This project showcases my ski
 * Display of featured products with dynamically loaded product details.
 * Responsive design that adapts to any screen size (desktop, tablet, or mobile).
 * Fully functional search bar to quickly find products.
+  ![image alt]()
 ## Product Details Page
 * Detailed product descriptions, features, and pricing.
 * "Add to Cart" button, with a success notification on click.
 * "Related Products" section to suggest other items users may like.
 * Interactive contact button for mobile users.
+  ![image alt]()
 ## Cart Page
 * Dynamic cart functionality with:
 Add or remove items.
@@ -21,6 +23,7 @@ Add or remove items.
  * Cart icon displaying the number of items added.
  * Price totals in Ugandan Shillings (UGX).
  * Checkout button linked back to the homepage.
+   ![image alt]()
 # Navigation Menu
  * A responsive hamburger menu for product categories (Cameras, TVs, Laptops, Lights).
  * Quick navigation links to different sections and pages.
